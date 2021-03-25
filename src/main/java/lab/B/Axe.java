@@ -10,6 +10,10 @@ public class Axe extends Weapon implements Cloneable {
     return "Axe of " + super.toString();
   }
 
+  @Override public boolean equals(Object o) {
+    return (o instanceof Axe) && super.equals(o);
+  }
+
   @Override public Axe clone() {
     Axe axe = new Axe();
     axe.damage = damage;

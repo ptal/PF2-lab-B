@@ -6,7 +6,7 @@ public class Main {
   public static void main(String[] args) {
     Weapon w = new Axe();
     Weapon w2 = new Hammer();
-    Weapon w3 = new Hammer();
+    Weapon w3 = new Hammer(10);
     Weapon a1 = new MithrillAxe(true);
     Weapon a2 = new MithrillAxe(false);
     System.out.println("w = " + w);
@@ -16,7 +16,9 @@ public class Main {
     System.out.println("a2 = " + a2);
     equalWeapon(w, w2);
     equalWeapon(w2, w2);
-    equalWeapon(w2, w3);
+    System.out.println("Comparing an axe and hammer of similar damages:");
+    equalWeapon(w, w3);
+    equalWeapon(w, w2);
     equalWeapon(a1, a2);
     // Not symmetric. (uncomment in MithrillAxe to see that).
     System.out.println("Symmetric test:");
@@ -32,7 +34,7 @@ public class Main {
     s.add(w2);
     s.add(a1);
     s.add(a2);
-    System.out.println(s.contains(w3));
+    System.out.println(s.contains(new Hammer()));
     // Set collection
     HashSet<Weapon> store = new HashSet<>();
     store.add(new Axe());
