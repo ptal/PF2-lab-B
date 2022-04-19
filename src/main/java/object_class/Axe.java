@@ -1,4 +1,4 @@
-package lab.B;
+package object_class;
 
 public class Axe extends Weapon implements Cloneable {
   private static final int DAMAGE = 10;

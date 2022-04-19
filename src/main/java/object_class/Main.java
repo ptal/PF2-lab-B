@@ -1,4 +1,4 @@
-package lab.B;
+package object_class;
 
 import java.util.*;
 

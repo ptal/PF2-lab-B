@@ -1,4 +1,4 @@
-package lab.B;
+package object_class;
 
 public class MithrillAxe extends Axe implements Cloneable {
   private boolean madeByDwarf;

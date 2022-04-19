@@ -1,4 +1,4 @@
-package lab.B;
+package object_class;
 
 public abstract class Weapon {
   protected int damage;
