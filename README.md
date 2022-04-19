@@ -1,3 +1,3 @@
-# Programming fundamentals 2 - Laboratory B
+# Programming fundamentals 2 - Object class laboratory
 
-This is the companion code and exercises of the Chapter 7: (Almost) Everything is Object.
+This is the companion code and exercises of the lecture _(Almost) Everything is Object_.
