@@ -1,4 +1,4 @@
-package lab.B;
+package object_class;
 
 public class Main {
   public static void main(String[] args) {
