@@ -1,6 +1,6 @@
 package object_class;
 
-public class Axe extends Weapon implements Cloneable {
+public class Axe extends Weapon {
   private static final int DAMAGE = 10;
   public Axe() {
     super(DAMAGE);
@@ -15,8 +15,6 @@ public class Axe extends Weapon implements Cloneable {
   }
 
   @Override public Axe clone() {
-    Axe axe = new Axe();
-    axe.damage = damage;
-    return axe;
+    return (Axe)super.clone();
   }
 }

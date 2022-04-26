@@ -1,6 +1,6 @@
 package object_class;
 
-public abstract class Weapon {
+public abstract class Weapon implements Cloneable {
   protected int damage;
 
   public Weapon(int damage) {
@@ -25,5 +25,14 @@ public abstract class Weapon {
 
   @Override public String toString() {
     return damage + " damages";
+  }
+
+  @Override protected Weapon clone() {
+    try {
+      return (Weapon)super.clone();
+    }
+    catch (CloneNotSupportedException e) {
+      throw new AssertionError(); // Can't happen
+    }
   }
 }

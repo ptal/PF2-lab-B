@@ -1,10 +1,9 @@
 package object_class;
 
-public class MithrillAxe extends Axe implements Cloneable {
+public class MithrillAxe extends Axe {
   private boolean madeByDwarf;
 
   public MithrillAxe(boolean madeByDwarf) {
-    super();
     this.madeByDwarf = madeByDwarf;
   }
 
@@ -14,9 +13,7 @@ public class MithrillAxe extends Axe implements Cloneable {
   }
 
   @Override public MithrillAxe clone() {
-    MithrillAxe axe = new MithrillAxe(madeByDwarf);
-    axe.damage = damage;
-    return axe;
+    return (MithrillAxe)super.clone();
   }
 
   // // Not symmetric, neither transitive
@@ -33,7 +30,7 @@ public class MithrillAxe extends Axe implements Cloneable {
   //   }
   // }
 
-  // Still not transitive...
+  // Still not transitive... but unfortunately, that's as good as it can be.
   @Override public boolean equals(Object o) {
     if(o == this) {
       return true;
