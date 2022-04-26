@@ -5,4 +5,8 @@ public class Hammer extends Weapon {
   public Hammer() {
     super(DAMAGE);
   }
+
+  public Hammer(int damage) {
+    super(damage);
+  }
 }
